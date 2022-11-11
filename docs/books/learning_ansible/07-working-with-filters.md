@@ -44,7 +44,7 @@ Throughout this chapter, we will use the following playbook to test the differen
     zero_string: "0"
     non_zero: 4
     true_booleen: True
-    true_non_booleen: "True"
+    true_non_boolean: "True"
     false_boolean: False
     false_non_boolean: "False"
     whatever: "It's false!"
@@ -138,7 +138,7 @@ or a variable into a boolean:
 
 - name: Display a string as a boolean
   debug:
-    var: true_non_boolean | bool
+    var: true_non_booleen | bool
 
 - name: Display a string as a boolean
   debug:
